@@ -8,15 +8,11 @@ const apiGet = async (seeMore) =>{
 
 const card = (data, seeMore) =>{
     const cardArea = document.getElementById("card-area");
-    const showBtn = document.getElementById("see-more-btn");
-    if(data.length > 6 && seeMore){
-        showBtn.classList.remove("hidden")
+    
+    if(seeMore){
+        data = data.slice(0, 6);
     }else{
-        showBtn.classList.add("hidden");
-    }
-    // slice
-    if(!seeMore){
-        data = data.slice(0, 12);
+        data = data.all
     }
     
     data.forEach( (tool) => {
@@ -120,7 +116,7 @@ const showDetails =  (id) => {
 const seeMore = () =>{
     apiGet(true);
 }
-seeMore()
+seeMore();
 
 
 
