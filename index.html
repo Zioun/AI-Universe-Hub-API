@@ -64,12 +64,17 @@
         <!--todo See More Start -->
         <section class="flex justify-center">
             <div class="mt-[52px] mb-[60px]">
-                <button class="btn btn-error text-white">See More</button>
+                <button id="see-more-btn" onclick="seeMore()" class="hidden btn btn-error text-white">See More</button>
             </div>
         </section>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="showModal" class="-mt-20 m-auto modal modal-bottom modal-middle max-w-[1246px] rounded-2xl">
+            <div id="details-box" class="modal-box bg-[#FEF7F7]">
+                
+            </div>
+        </dialog>
     </main>
     <script src="js/app.js"></script>
-    
 </body>
 
 </html>
