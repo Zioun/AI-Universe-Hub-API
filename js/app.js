@@ -129,7 +129,6 @@ document.getElementById("show-all-button").addEventListener("click", showAllData
 seeMore();
 
 
-
 const seeShort = () =>{
     apiGet(false);
     const shortDataBtn = document.getElementById("show-all-button");
