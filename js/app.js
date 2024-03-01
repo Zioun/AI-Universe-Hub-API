@@ -127,3 +127,18 @@ const showAllData = () => {
 document.getElementById("show-all-button").addEventListener("click", showAllData);
 
 seeMore();
+
+
+
+const seeShort = () =>{
+    apiGet(false);
+    const shortDataBtn = document.getElementById("show-all-button");
+    shortDataBtn.classList.remove("hidden");
+}
+
+const seeAllShort = () =>{
+    apiGet(true);
+}
+
+//short data
+document.getElementById("short-by-data").addEventListener('click',seeShort);
